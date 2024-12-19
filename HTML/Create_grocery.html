@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <Title>Custom Grocery List</Title>
+        <link rel="stylesheet" href = "styles.css">
+        <link rel="stylesheet" href="variables.scss">
+       
+  </head>
+    </head>
+    <body>
+        <h2>Create your own Grocery List Here</h2>
+        <img src="C:\Users\Sfath\Git1\Gluten27-7\HTML\create_own _list.jpg" alt="create own grocery list" width="780">
+        <form>
+            Enter username
+            <div id="foo">
+                <input type = "text" placeholder = "Username" name="Username">
+                <input type = "Submit">
+            </div>
+            <div>
+                <h3>Grocery Type: </h3>
+                <input type = "Radio" value = "Daily" name = "Daily"> Daily
+                <input type = "Radio" value = "Monthly" name = "Monthly"> Monthly
+                <input type = "Radio" value = "Yearly" name = "Yearly"> Yearly
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Measure</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input list="Groceries" placeholder="Groceries" name = "Groceries">
+                                <datalist id="Groceries">
+                                    <option value="Tomato"></option>
+                                    <option value="Potato"></option>
+                                    <option value="Capsicum"></option>
+                                    <option value="Cilantro"></option>
+                                    <option value="Spring Onion"></option>
+                                    <option value="Green chillies"></option>
+                                    <option value= "cabbage" ></option>
+                                    <option value="Raddish" ></option>
+                        
+                                </datalist>
+                            </td>
+                            <td>
+                                <input list="Quantity" placeholder="Quantity" name = "Quantity">
+                                <datalist id="Quantity">
+                                    <option value="1"></option>
+                                    <option value="2"></option>
+                                    <option value="3"></option>
+                                    <option value="4"></option>
+                                    <option value="5"></option>
+                                    <option value="6"></option>
+                                    <option value="7"></option>
+                                    <option value="8"></option>
+                                    <option value="9"></option>
+                                    <option value="10"></option>
+        
+                                </datalist>
+                            </td>
+                            <td>
+                                <input list="measures" placeholder="Measure" name = "Measure">
+                                <datalist id="measures">
+                                    <option value="LB"></option>
+                                    <OPTION VALUE="kg"></OPTION>
+                                    <OPTION value="gm"></OPTION>
+                                </datalist>
+                            </td>
+                            <td><input type = submit></td>
+                        </tr>
+                    </tbody>
+                </table>
+                 
+            </div>
+            
+        </form>
+
+    </body>
+</html>

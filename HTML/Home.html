@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Grocery</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            div{
+                background-color: darksalmon;
+                width:fit-content;
+                padding:10px;
+                margin:20px;
+            }
+            a[href= "Receipt_Based_Grocery.html"]{
+                color:darkgreen
+
+            }
+            #container{
+                display:flex;
+                flex-wrap: wrap;
+            }
+            #container>dev{
+                background-color: springgreen;
+                font-size: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin:30px;
+                padding:20px;
+                width:200px;
+            }
+            #container>dev:hover{
+                background-color: red;
+            }
+            #grid{
+                display:grid;
+                background-color:blue;
+                padding:20px;
+                column-gap: 10px;
+                row-gap: 10px;
+                grid-template-columns: 200px 200px auto;
+            }
+            .grid-item{
+                background-color: yellowgreen;
+                font-size:medium;
+                padding: 20px;
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Welcome to My Grocery</h1>
+        <p>Here you will be helped to get the list of your Grocery</p>
+
+        <p><img src="C:\Users\Sfath\Git1\Gluten27-7\HTML\Save-Money-On-Groceries_UBC-Food-Services.jpg" alt="My Grocery" width = 780></p>
+
+        <h3> <div>Grocery List:</div></h3>
+        <ul>
+            <li><a href= "Receipt_Based_Grocery.html">Receipt Based Grocery</a></li>
+            <li><a href=List_Based_Grocery.html>Non Receipt Based</a></li>
+            
+        </ul>
+        <dev id="container">
+            <dev>1.This is a sample container</dev>
+            <dev>2.This is a sample container</dev>
+            <dev>3.This is a sample container</dev>
+            <dev>4.This is a sample container</dev>
+            <dev>5.This is a sample container</dev>
+            <dev>6.This is a sample container</dev>
+            <dev>7.This is a sample container</dev>
+            
+        </dev>
+        <dev id="grid">
+            <dev class="grid-item">rice</dev>
+            <dev class="grid-item">wheat</dev>
+            <dev class="grid-item">pulses</dev>
+            <dev class="grid-item">grams</dev>
+            <dev class="grid-item">greens</dev>
+            <dev class="grid-item">bakery</dev>
+            <dev class="grid-item">fries</dev>
+        </dev>
+
+    </body>
+
+</html>
+
